@@ -1,0 +1,155 @@
+@import "~@ff/ui-kit/lib/styles/scss/fns/colors.scss";
+
+.component {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 32px;
+  border-radius: 16px;
+  background-color: $white;
+  box-shadow: 0px 1px 3px rgba(26, 26, 26, 0.08);
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .flexDirectionColumn {
+    flex-direction: column;
+  }
+
+  .flexDirectionRowReverse {
+    flex-direction: row-reverse;
+  }
+
+  .flexDirectionColumnReverse {
+    flex-direction: column-reverse;
+  }
+
+  .flexWrapWrap {
+    flex-wrap: wrap;
+  }
+
+  .flexWrapWrapReverse {
+    flex-wrap: wrap-reverse;
+  }
+
+  .justifyContentEnd {
+    justify-content: flex-end;
+  }
+
+  .justifyContentCenter {
+    justify-content: center;
+  }
+
+  .justifyContentSpaceBetween {
+    justify-content: space-between;
+  }
+
+  .justifyContentSpaceAround {
+    justify-content: space-around;
+  }
+
+  .justifyContentSpaceEvenly {
+    justify-content: space-evenly;
+  }
+
+  .alignItemsEnd {
+    align-items: flex-end;
+  }
+
+  .alignItemsCenter {
+    align-items: center;
+  }
+
+  .alignItemsStretch {
+    align-items: stretch;
+  }
+
+  .heightUnset {
+    height: unset;
+  }
+
+  .alignContentEnd {
+    height: 140px;
+    flex-wrap: wrap;
+    align-content: flex-end;
+  }
+
+  .alignContentCenter {
+    height: 140px;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+
+  .alignContentSpaceBetween {
+    height: 140px;
+    flex-wrap: wrap;
+    align-content: space-between;
+  }
+
+  .alignContentSpaceAround {
+    height: 140px;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+
+  .alignContentSpaceEvenly {
+    height: 140px;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+  }
+
+  .rowGap {
+    flex-wrap: wrap;
+    row-gap: 12px;
+  }
+
+  .columnGap {
+    flex-wrap: wrap;
+    column-gap: 12px;
+  }
+
+  .gap {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .order {
+    :nth-child(3) {
+      order: -1;
+    }
+  }
+
+  .flexGrow {
+    :nth-child(2) {
+      flex-grow: 1;
+    }
+  }
+
+  .flexShrink {
+    :nth-child(4) {
+      flex-shrink: 0;
+    }
+  }
+
+  .flexBasis {
+    :nth-child(5) {
+      flex-basis: 100px;
+    }
+  }
+
+  .alignSelf {
+    :nth-child(1) {
+      align-self: center;
+    }
+  }
+
+  .flexShrinkElement {
+    flex-shrink: 0;
+  }
+}

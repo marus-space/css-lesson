@@ -1,0 +1,98 @@
+@import "~@ff/ui-kit/lib/styles/scss/fns/colors.scss";
+
+.component {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 32px;
+  border-radius: 16px;
+  background-color: $white;
+  box-shadow: 0px 1px 3px rgba(26, 26, 26, 0.08);
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .gridTemplateColumns1 {
+    grid-template-columns: 60px 20% 1fr 2.5fr auto min-content;
+  }
+
+  .gridTemplateColumns2 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .gridTemplateColumns3 {
+    grid-template-columns: repeat(auto-fill, 100px);
+  }
+
+  .gridTemplateColumns4 {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .gridTemplateAreas1 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 120px 60px 100px auto;
+
+    :nth-child(1) {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    :nth-child(2) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+
+    :nth-child(3) {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 5;
+    }
+
+    :nth-child(4) {
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    :nth-child(5) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 4;
+      grid-row-end: 5;
+    }
+
+    :nth-child(6) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+  }
+
+  .rowGap {
+    grid-template-columns: 2fr 2fr 1fr;
+    row-gap: 12px;
+  }
+
+  .columnGap {
+    grid-template-columns: 1fr 2fr 3fr;
+    column-gap: 12px;
+  }
+
+  .gap {
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 12px;
+  }
+}

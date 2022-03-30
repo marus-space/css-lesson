@@ -1,0 +1,43 @@
+@import "~@ff/ui-kit/lib/styles/scss/fns/colors.scss";
+
+.component {
+  background-color: $primary-color-100;
+  padding: 16px 24px;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0px 1px 3px rgba(26, 26, 26, 0.08);
+
+  ul[class*="fns-navigation__list_horizontal"] {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .link {
+    font-size: 14px;
+    color: $primary-color-500;
+    padding: 12px;
+    border-radius: 8px;
+    transition: all linear 30ms;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      background-color: $primary-color-10;
+    }
+
+    &[class*="active"] {
+      background-color: $primary-color-10;
+    }
+
+    @media(max-width: 830px) {
+      &:not([class*="active"]) {
+        display: none;
+      }
+    }
+  }
+}
+
+nav[class*="fns-navigation"] {
+  height: unset;
+}

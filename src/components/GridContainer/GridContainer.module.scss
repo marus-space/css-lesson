@@ -1,0 +1,18 @@
+@import "~@ff/ui-kit/lib/styles/scss/fns/colors.scss";
+
+.component {
+  display: grid;
+  border-radius: 4px;
+  background-color: $primary-color-200;
+  border: $primary-color-300 solid 1px;
+
+  .element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: $primary-color-10;
+    border: $primary-color-200 solid 1px;
+    border-radius: 4px;
+  }
+}

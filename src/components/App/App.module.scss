@@ -1,0 +1,14 @@
+@import "~@ff/ui-kit/lib/styles/scss/fns/colors.scss";
+
+.component {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-x: scroll;  
+  background-color: $base-color-10;
+}
+
+.content {
+  flex: 1;
+  margin-top: 70px;
+}
